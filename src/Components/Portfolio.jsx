@@ -31,37 +31,37 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Password generator app",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Enhance your online security with a robust password generator. Generate a secure password .",
+    url: "https://manisha-passwordgenerator.netlify.app/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Simple calculator",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      " A handy tool for your everyday calculations, beautifully designed and functional. Give it a try ",
+    url: "https://manisha-simple-calculator.netlify.app/",
   },
   {
-    title: "My Resume Site",
+    title: "Share Profile",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      " A web-based platform for networking and sharing professional profiles effortlessly. Connect with me .",
+    url: "https://manisha-shareprofile.netlify.app/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "See all my projects",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Feel free to check out all my projects on GitHub to see the range of work I've done and get a sense of my skills and interests.",
+    url: "https://github.com/Manishar55?tab=repositories",
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <h2 style={{ textAlign: "center", color: "#000" }}>Portfolio</h2>
+      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem", color: "#000" }}>
+        <div style={{ maxWidth: "40%", alignSelf: "center", color: "#000" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
@@ -72,7 +72,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h4 style={{ flexBasis: "40px", color: "#4e4f4f" }}>{project.title}</h4>
               </a>
               <p className="small">{project.description}</p>
             </div>
